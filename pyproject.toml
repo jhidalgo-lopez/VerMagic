@@ -1,22 +1,16 @@
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
-[project]
-name = "VerMagic"
-version = "0.0.1"
-authors = [
-  { name="Chema Hidalgo-Lopez", email="chema.hl@gmail.com" },
-]
-description = "A small package for ETL of NGS data and plotting"
+[tool.poetry]
+name = "vermagic"
+version = "0.1.0"
+description = "A small package for ETL of NGS data and plotting."
+authors = ["Jose Manuel Hidalgo-Lopez <chema.hl@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.7"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-]
 
-[project.urls]
-"Homepage" = "https://github.com/jhidalgo-lopez/VerMagic"
-"Bug Tracker" = "https://github.com/jhidalgo-lopez/VerMagic/issues"
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.5.3"
+plotnine = "^0.10.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
